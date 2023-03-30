@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/admin/plugins/bootstrap/css/bootstrap.min.css">
+		<link href="/static/admin/css/style.css" rel="stylesheet" />
+		<link href="/static/admin/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+		<link href="/static/admin/plugins/horizontal-menu/dropdown-effects/fade-down.css" rel="stylesheet">
+		<link href="/static/admin/plugins/horizontal-menu/horizontalmenu.css" rel="stylesheet">
+		<link href="/static/admin/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+		<link href="/static/admin/plugins/accordion1/css/easy-responsive-tabs.css" rel="stylesheet">
+		<link href="/static/admin/plugins/sidebar/sidebar.css" rel="stylesheet">
+		<link href="/static/admin/plugins/iconfonts/plugin.css" rel="stylesheet" />
+		<link href="/static/admin/plugins/iconfonts/icons.css" rel="stylesheet" />
+		<link  href="/static/admin/fonts/fonts/font-awesome.min.css" rel="stylesheet">
+		{% block css %}{% endblock %}
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <title>Duralga</title>
+  </head>
+  
+  <body >
+    {% include 'navigation.html' %}
+    </br>
+	
+    <div class="container" >
+        {% block content %}
+
+        {% endblock %}
+    </div>
+	
+
+    <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+		<script src="/static/admin/plugins/jquery-3.2.1.min.js"></script>
+		<script src="/static/admin/plugins/bootstrap/popper.min.js"></script>
+		<script src="/static/admin/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/static/admin/plugins/jquery.sparkline.min.js"></script>
+		<script src="/static/admin/plugins/circle-progress.min.js"></script>
+		<script src="/static/admin/plugins/moment/moment.min.js"></script>
+		<script src="/static/admin/plugins/counters/jquery.missofis-countdown.js"></script>
+		<script src="/static/admin/plugins/counters/counter.js"></script>
+		<script src="/static/admin/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+		<script src="/static/admin/plugins/horizontal-menu/horizontalmenu.js"></script>
+		<script src="/static/admin/plugins/accordion1/js/easyResponsiveTabs.js"></script>
+		<script src="/static/admin/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script src="/static/admin/plugins/sidebar/sidebar.js"></script>
+		{% block js %}{% endblock %}
+		
+		
+  </body>
+</html>
+

@@ -1,0 +1,12 @@
+h2 {
+    color: white;
+    /* font-size: 60px; */
+}
+
+
+body {
+    background-image: url("../static/admin/pictures/arka22fon.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-color: green; */
+}

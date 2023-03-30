@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h4 style="text-align:center; font-family: Arial; color: rgb(253, 253, 253); font-weight:bolder">Giren maşynyň maglumatlary</h4>
+<br/>
+<div class="flex-container" style="display: flex; flex-direction: row; flex-wrap: wrap ">
+        <div class="shadow p-3 mb-5 bg-body rounded" style="width: 32%; margin-right: 15px; opacity: 80%; color: black; background-color:beige ">
+            <h5><b>Ulag ID-si: {{ res['data']['id'] }} </b></h5></h5>
+            <h5><b>Sürüjiniň ady: {{ res['data']['driver_name'] }} </b></h5></h5>
+            <h5><b>Sürüjiniň familiýasy: {{ res['data']['driver_surname'] }} </b></h5></h5>
+            <h5><b>Ulagyň kysymy: {{ res['data']['car_name'] }}</b></h5>
+            <h5><b>Ulagyň belgisi: {{ res['data']['plate'] }}</b></h5>
+        </div>
+    </div>
+{% endblock %}

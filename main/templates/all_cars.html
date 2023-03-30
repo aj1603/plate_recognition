@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 style="text-align:center; color: #000">Duralga girip bilýän ulaglaryň sanawy</h1>
+<br/>
+<div class="flex-container" style="display: flex; flex-direction: row; flex-wrap: wrap ">
+    {% for car in cars %} 
+        <div class="shadow p-3 mb-5 bg-body rounded" style="width: 32%; margin-right: 15px; opacity: 80%; color: black; background-color:beige ">
+            <h5><b>Ulag ID-si: {{ car.id }} </b></h5></h5>
+            <h5><b>Sürüjiniň ady: {{ car.driver_name }} </b></h5></h5>
+            <h5><b>Sürüjiniň familiýasy: {{ car.driver_surname }} </b></h5></h5>
+            <h5><b>Ulagyň kysymy: {{ car.car_name }}</b></h5>
+            <h5><b>Ulagyň belgisi: {{ car.plate }}</b></h5>
+            <a class="ml-2" href="{{ url_for('update_car', id=car.id) }}" style="font-size: 20px; color: rgb(47, 163, 1); margin-right: 20px;">Düzetmek</a>
+            <a class="ml-2" href="{{ url_for('delete_car', id=car.id) }}" style="font-size: 20px; color: rgb(255, 14, 14); margin-right: 20px;">Pozmak</a>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
